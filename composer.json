@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.1"
+        "guzzlehttp/guzzle": "~5.0@dev"
     },
     "autoload": {
         "psr-4": {

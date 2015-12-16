@@ -13,7 +13,9 @@ class ESM
     public function __construct($options)
     {
         $this->options = $options;
-        $this->client = new Client();
+        $this->client = new Client([
+            'base_url' => [$this->options['URL'], ['version' => 'v2']]
+        ]);
     }
 
     public function testConnection()
@@ -38,8 +40,8 @@ class ESM
     private function get($endpoint)
     {
         try {
-            $response = $this->client->request('POST', $this->options['URL'] . $endpoint, [
-                'form_params' => [
+            $response = $this->client->post($this->options['URL'] . $endpoint, [
+                'body' => [
                     'APIKEY' => $this->options['APIKEY']
                 ]
             ]);
