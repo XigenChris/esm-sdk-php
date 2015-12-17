@@ -5,6 +5,8 @@ use GuzzleHttp\Client;
 
 class ESM
 {
+    use Shortcuts\Client;
+
     public $responseData;
     public $options;
     private $client;
@@ -34,7 +36,7 @@ class ESM
 
     public function __toArray($data)
     {
-        return json_decode($data);
+        return @json_decode($data);
     }
 
     private function get($endpoint)
