@@ -7,11 +7,17 @@
         }
     ],
     "require": {
+        "php": ">=5.4.38",
         "guzzlehttp/guzzle": "~5.0@dev"
     },
     "autoload": {
         "psr-4": {
             "Xigen\\": ["src/"]
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "5.4.38"
         }
     }
 }
