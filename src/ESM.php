@@ -6,6 +6,7 @@ use GuzzleHttp\Client;
 class ESM
 {
     use Shortcuts\Client;
+    use Shortcuts\Templates;
 
     public $responseData;
     public $options;
