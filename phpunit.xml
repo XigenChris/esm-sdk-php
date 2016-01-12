@@ -16,4 +16,17 @@
             <directory>tests/</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+          <directory suffix=".php">src</directory>
+          <directory suffix=".php">tests</directory>
+          <exclude>
+            <file>tests/bootstrap.php</file>
+            <directory suffix=".php">vendor</directory>
+          </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+    </logging>
 </phpunit>
