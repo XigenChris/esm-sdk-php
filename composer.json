@@ -10,9 +10,14 @@
         "php": ">=5.4.38",
         "guzzlehttp/guzzle": "~5.0@dev"
     },
+    "require-dev": {
+        "phpunit/phpunit": "@dev",
+        "squizlabs/php_codesniffer": "2.*"
+    },
     "autoload": {
         "psr-4": {
-            "Xigen\\": ["src/"]
+            "Xigen\\": ["src/"],
+            "XigenTest\\": ["test/"]
         }
     },
     "config": {
