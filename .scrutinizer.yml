@@ -1,0 +1,17 @@
+checks:
+    php:
+        code_rating: true
+        duplication: true
+
+before_commands:
+    - 'composer install --no-interaction --no-scripts'
+
+build:
+    tests:
+        override:
+        override:
+            -
+                command: 'phpunit --coverage-clover=coverage.xml'
+                coverage:
+                    file: 'overage.xml'
+                    format: 'php-clover'
