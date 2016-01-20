@@ -1,0 +1,11 @@
+before_script:
+  - composer install --prefer-dist &> /dev/null
+
+stages:
+  - test
+
+Run tests:
+  stage: test
+  script:
+    - php vendor/bin/phpcs --standard=PSR2 --colors -pn src/ tests/
+    - php vendor/bin/phpunit --colors --coverage-text
