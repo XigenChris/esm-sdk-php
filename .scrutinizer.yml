@@ -9,7 +9,6 @@ before_commands:
 build:
     tests:
         override:
-        override:
             -
                 command: 'phpunit --coverage-clover=coverage.clover'
                 coverage:
