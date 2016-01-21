@@ -5,6 +5,7 @@ use GuzzleHttp\Client;
 
 class ESM
 {
+    use Shortcuts\Banner;
     use Shortcuts\Client;
     use Shortcuts\Templates;
 
