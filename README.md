@@ -1,6 +1,8 @@
 # esm-sdk-php
 
 [![Build Status](https://travis-ci.org/XigenChris/esm-sdk-php.svg?branch=master)](https://travis-ci.org/XigenChris/esm-sdk-php)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/XigenChris/esm-sdk-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/XigenChris/esm-sdk-php/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/XigenChris/esm-sdk-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/XigenChris/esm-sdk-php/?branch=master)
 
 A simple PHP Library that allows you to interact with Xigen's Signature Manager's API
 without needing to know the endpoints or make manual curl request.
