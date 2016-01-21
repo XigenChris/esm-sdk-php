@@ -32,7 +32,7 @@ $ESM = new \Xigen\ESM([
 ## Usage
 As an example we can a list of every user in the system
 ```php
-$ESM->clientGetAll();
+$ESM->clientUsersGetAll();
 foreach ($ESM->getRequestData()->payload->Data as $user) {
     var_dump($user, $user->Email);
 }
