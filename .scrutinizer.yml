@@ -11,7 +11,7 @@ build:
         override:
         override:
             -
-                command: 'phpunit --coverage-clover=coverage.xml'
+                command: 'phpunit --coverage-clover=coverage.clover'
                 coverage:
-                    file: 'overage.xml'
+                    file: 'coverage.clover'
                     format: 'php-clover'
